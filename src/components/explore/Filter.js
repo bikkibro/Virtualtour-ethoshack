@@ -1,8 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-const url='http://192.168.74.56/php/ethoshackphp/SAFAR/php/display';
-const urlimg='http://192.168.74.56/php/ethoshackphp/SAFAR/php/uploads/';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+const url='http://172.0.16.125/php/ethoshackphp/SAFAR/php/display';
+const urlimg='http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/';
 const Filter = ({data}) => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -42,9 +44,13 @@ const Filter = ({data}) => {
       // Handle the response data here
    
   };
+  const navigate = useNavigate();
+  const navg=(singleplace)=>{
+    navigate("/searchedplace", { state: singleplace });
+  }
 
   return (
-    <div className='' id='filter'>
+    <div className='z-999 flex justify-end' id='filter'>
       <select value={selectedCategory} onChange={handleCategoryChange}>
         <option value="">Select a category</option>
         {categories.map((category) => (
@@ -62,7 +68,7 @@ const Filter = ({data}) => {
                 <p className='text-end mr-6'>{singleplace.region_name}.</p>
                 <div className='text-center font-medium '>
                   <p className='py-4 mt-4 mx-4 border-b '>Category:{singleplace.category_name}.</p>
-                  <button className='bg-[#439fef] w-[200px] rounded-md font-medium py-2 px-2 my-2 mx-auto '>Explore</button>
+                  <button className='bg-[#439fef] w-[200px] rounded-md font-medium py-2 px-2 my-2 mx-auto 'onClick={()=>navg(singleplace)}>Explore</button>
                 </div>
               </div>
             )

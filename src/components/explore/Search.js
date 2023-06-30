@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import { FaUser, FaBell } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-const url='http://192.168.74.56/php/ethoshackphp/SAFAR/php/display';
+const url='http://172.0.16.125/php/ethoshackphp/SAFAR/php/display';
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState([]);
   const [showPlaces, setShowPlaces] = useState(false);
@@ -52,14 +52,15 @@ const Search = () => {
 
  
   return (
-    <div className=" container  flex flex-row mx-auto p-4">
+    <div className=" container z-0 absolute inset-0 flex items-center mt-16 justify-start flex-row mx-auto p-4 h-24 w-36">
      <select
             className="border border-yellow-300 rounded-md px-4 py-2 mb-4"
             value={selectedPlace}
             onChange={(e) => handlePlaceSelect(e.target.value)}
           >
-            {/* <option value="">Select a place</option> */}
+            <option value="">Select a place</option>
             {searchTerm.map((place) => (
+              
               <option key={place.id} value={place.place_name}>
               {place.place_name}
               </option>
@@ -73,8 +74,8 @@ const Search = () => {
         Explore
       </button>
       <div className='flex justify-between text-black  my-6'>
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-bell"></i>
+      {/* <i class="fa-solid fa-user"></i> */}
+      {/* <i className="fa-solid fa-bell "></i> */}
       </div>
       {showPlaces && (
         <div>

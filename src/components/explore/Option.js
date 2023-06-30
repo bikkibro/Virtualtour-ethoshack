@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Filter from './Filter';
+import { useNavigate } from "react-router-dom";
 
-const url='http://192.168.74.56/php/ethoshackphp/SAFAR/php/display';
-const urlimg='http://192.168.74.56/php/ethoshackphp/SAFAR/php/uploads/';
+const url='http://172.0.16.125/php/ethoshackphp/SAFAR/php/display';
+const urlimg='http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/';
 
 function Option() {
   const [place, setPlace] = useState([]);
@@ -15,8 +16,10 @@ function Option() {
         setPlace(data)
       })
   }, [])
- 
-
+  const navigate = useNavigate();
+const nav=(singleplace)=>{
+  navigate("/searchedplace", { state: singleplace });
+}
 
 
   return (
@@ -34,7 +37,7 @@ function Option() {
                   <p className='text-end mr-6'>{singleplace.region_name}.</p>
                   <div className='text-center font-medium '>
                     <p className='py-4 mt-4 mx-4 border-b '>Category:{singleplace.category_name}.</p>
-                    <button className='bg-[#439fef] w-[200px] rounded-md font-medium py-2 px-2 my-2 mx-auto '>Explore</button>
+                    <button className='bg-[#439fef] w-[200px] rounded-md font-medium py-2 px-2 my-2 mx-auto ' onClick={()=>nav(singleplace)}>Explore</button>
                   </div>
                 </div>
               )

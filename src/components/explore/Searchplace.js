@@ -2,12 +2,12 @@ import { useLocation } from "react-router-dom";
 function Searchplace() {
     const location = useLocation();
     const place = location.state;
-    const urlimg='http://192.168.74.56/php/ethoshackphp/SAFAR/php/uploads/';
+    const urlimg='http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/';
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 w-screen">
             <h1 className="text-xl text-center text-green-500 mb-4">{place.place_name}</h1>
 
-            <div className="flex flex-row">
+            <div className="flex flex-row w-full">
                 <div className="w-25 ">
 
                     <div className="flex flex-wrap">
