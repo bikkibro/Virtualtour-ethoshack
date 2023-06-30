@@ -31,7 +31,7 @@ const handleaddsection=()=>{
 }
   return (
     <div>
-      <div className='z-0 absolute inset-0 flex items-start mt-20 justify-end mr-8'>
+      <div className='z-0 absolute inset-0 flex items-start mt-20 justify-end mr-8 h-24'>
         <button  className="bg-blue-500 text-white px-4 py-2 rounded"
         onClick={handleaddsection}>Contribute</button>
       </div>

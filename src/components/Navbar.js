@@ -40,7 +40,8 @@ function Navbar() {
               
                 {/* <a font-medium href='#signup' >Get started free</a> */}
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 w-[70px] text-center rounded-md shadow-lg">
-                <Link to="/login">Log in</Link>
+                {/* <Link to="/login">Log in</Link> */}
+                <a href="http://172.0.16.125/php/ethoshackphp/SAFAR/php/users/userlogin.php">Log in</a>
                 </button>                
             </div>
         </header>

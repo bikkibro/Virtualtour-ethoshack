@@ -3,6 +3,7 @@ import Filter from "./Filter";
 import Option from './Option'
 import Search from "./Search";
 import Slider from "./Slider";
+
 function Explore(){
 
 
@@ -12,6 +13,7 @@ function Explore(){
             <div>
                 <Slider/>
                 <Search/>
+              
                 <Option/>
                 {/* <Filter/> */}
             </div>

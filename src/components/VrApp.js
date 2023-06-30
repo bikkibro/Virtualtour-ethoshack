@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import '../vrapp.css'
-import video from '../video/buddha.mp4'
+import video from '../video/mountain.mp4'
 import { useEffect } from 'react';
 import play from '../image/play.svg'
 function VrApp({videosrc ,vrwidth,vrheight}) {

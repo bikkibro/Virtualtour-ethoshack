@@ -37,7 +37,9 @@ function FullView() {
                 return(
                     <div className="border m-2 rounded-md">
                         <h4 className="text-lg font-bold">{place.name}</h4>
+                        <img src={place.image} alt="/" />
                         <p>{place.description}</p>
+                       
                     </div>
                 )
             })

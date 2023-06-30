@@ -5,6 +5,7 @@ import Collection from './components/collection/Collection';
 import Explore from './components/explore/Explore';
 function App() {
   return (
+    
     <div className="App">
       <div className='h-screen'>
         <Home />
