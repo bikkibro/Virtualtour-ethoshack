@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import '../vrapp.css'
-import video from '../video/buddha.mp4'
+import video from '../video/mountain.mp4'
 import { useEffect } from 'react';
 import play from '../image/play.svg'
 function VrApp({videosrc ,vrwidth,vrheight}) {
@@ -112,7 +112,7 @@ function VrApp({videosrc ,vrwidth,vrheight}) {
     return (
         <div className="render relative w-full object-fit h-[420px]" id="render">
       <canvas id="three"></canvas>
-      <button className=" absolute inset-0  justify-center ">
+      <button className=" block">
         <i className="button fa-solid fa-circle-play fa-fade fa-2xl" style={{ color: '#d3d9d8' }}></i>
       </button>
     </div>
