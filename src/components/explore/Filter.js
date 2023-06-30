@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 const url='http://172.0.16.125/php/ethoshackphp/SAFAR/php/display';
 const urlimg='http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/';
 const Filter = ({data}) => {

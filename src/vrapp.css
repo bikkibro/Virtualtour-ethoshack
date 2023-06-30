@@ -5,7 +5,7 @@
 }
 #info {
 	position: absolute;
-	top: 9%;
+	top: 4%;
 	width: 40%;
 	text-align: center;
 	z-index: 100;
@@ -15,7 +15,7 @@
 }
 .end{
 	position: absolute;
-	top: 10%;
+	top: 5%;
 	right:1%;
 	width: 100%;
 	text-align: end;
@@ -42,16 +42,4 @@
 	text-align: start;
 	z-index: 100;
 	display:block;
-}
-.right{
-	position: absolute;
-	bottom: 1%;
-
-	width: 100%;
-	align-items: start;
-	z-index: 100;
-	display:flex;
-	justify-content: space-around;
-	
-
 }

@@ -16,12 +16,12 @@ function Home() {
             <Navbar />
             <div className='flex flex-col'>
                 
-            <div className='left m-0'>
+            <div className='left m-0 -mb-1'>
                 <Vr />
                 <Shortdesc />
             </div>
-            <div className='w-full h-15 bg-white'></div>
-            <div className='right mb-4 mt-8 font-mono bg-slate-200'>
+            {/* <div className='w-full h-15 bg-white'></div> */}
+            <div className='flex  mb-5 mt-8 font-mono bg-slate-200 justify-around'>
                 <div>
                  <h1 className='text-2xl mt-8 text-lime-500 font-semibold mr-8'>EXPLORE </h1>
                     <h1 className='text-2xl mt-3 text-orange-900 font-medium'>NEPAL!</h1>
