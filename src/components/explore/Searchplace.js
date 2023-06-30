@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../Navbar";
 import moment from 'moment';
 function Searchplace() {
+
   const location = useLocation();
   const place = location.state;
   const urlimg = "http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/";
@@ -103,6 +104,7 @@ function Searchplace() {
             </p>
           </div>
         </div>
+
 
         
 

@@ -14,6 +14,7 @@ function Navbar() {
           <h1 className="ml-4 font-bold text-3xl text-cyan-500 antialiased drop-shadow-md">SAFAR</h1>
         </h1>
         
+
         <nav class="nav font-semibold text-lg">
           <ul class="flex items-center">
             <li class="p-4 border-b-2 border-sky-500 border-opacity-0 hover:border-opacity-100 hover:text-sky-500 duration-200 cursor-pointer active">
@@ -41,7 +42,7 @@ function Navbar() {
           </button>                
         </div>
       </header>
-      
+
     );
 }
 export default Navbar;
