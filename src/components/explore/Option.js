@@ -26,7 +26,7 @@ const nav=(singleplace)=>{
     <div className='m-12'>
       
       <Filter data={place}/>
-      <div className=' py-[20px] md:grid grid-cols-3 gap-6  py-5   ' id='option'>
+      <div className=' py-[20px] flex flex-row gap-6  py-5 h-[490px] overflow-y-scroll ' id='option'>
        
           {
             place.map((singleplace) => {

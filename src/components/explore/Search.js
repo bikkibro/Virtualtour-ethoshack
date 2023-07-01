@@ -55,6 +55,8 @@ const Search = () => {
     <div className=" container z-0 absolute inset-0 flex items-center mt-16 justify-start flex-row mx-auto p-4 h-24 w-36">
      <select
             className="border border-yellow-300 rounded-md px-4 py-2 mb-4"
+            value={selectedPlace}
+            onChange={(e) => handlePlaceSelect(e.target.value)}
           >
             <option value="">Select a place</option>
             {searchTerm.map((place) => (
