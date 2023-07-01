@@ -27,7 +27,7 @@ function Navbar() {
               <Link to="/explore">Explore</Link>
             </li>
             <li class="p-4 border-b-2 border-sky-500 border-opacity-0 hover:border-opacity-100 hover:text-sky-500 duration-200 cursor-pointer">
-              <a href="">About</a>
+           <a href="http://192.168.74.56/php/ethoshackphp/SAFAR/php/addplace/addplace.php">Contribute</a>
             </li>
             
           </ul>
@@ -38,7 +38,7 @@ function Navbar() {
         <div id="google_translate_element" className="w-[150px] h-[50px]"></div>
           
           <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 w-[70px] text-center rounded-md shadow-lg">
-            Log in
+          <a href="http://192.168.74.56/php/ethoshackphp/SAFAR/php/users/userlogin.html">Log in</a>
           </button>                
         </div>
       </header>

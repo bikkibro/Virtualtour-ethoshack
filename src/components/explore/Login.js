@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.get('http://172.0.16.125/php/ethoshackphp/SAFAR/php/users/userlogin.php', {
+        const response = await axios.get('http://192.168.74.56/php/ethoshackphp/SAFAR/php/users/userlogin.php', {
           params: {
             email,
             password,

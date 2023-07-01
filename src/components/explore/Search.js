@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import { FaUser, FaBell } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-const url='http://172.0.16.125/php/ethoshackphp/SAFAR/php/display';
+const url='http://192.168.74.56/php/ethoshackphp/SAFAR/php/display';
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState([]);
   const [showPlaces, setShowPlaces] = useState(false);

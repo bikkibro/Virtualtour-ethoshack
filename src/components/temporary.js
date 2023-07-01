@@ -3,7 +3,7 @@ import Navbar from "../Navbar";
 function Searchplace() {
   const location = useLocation();
   const place = location.state;
-  const urlimg = "http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/";
+  const urlimg = "http://192.168.74.56/php/ethoshackphp/SAFAR/php/uploads/";
 
   const jsonData = place.region_weather;
   const deserializedData = JSON.parse(jsonData);

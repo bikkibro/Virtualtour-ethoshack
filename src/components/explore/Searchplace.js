@@ -5,7 +5,7 @@ function Searchplace() {
 
   const location = useLocation();
   const place = location.state;
-  const urlimg = "http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/";
+  const urlimg = "http://192.168.74.56/php/ethoshackphp/SAFAR/php/uploads/";
 
   const jsonData = place.region_weather;
   const deserializedData = JSON.parse(jsonData);
@@ -25,10 +25,10 @@ function Searchplace() {
         <div className="flex flex-row w-full mb-20">
           <div className="w-[50%] object-contain">
             <img
-              className="rounded my-4 mx-auto mt-2 bg-white"
+              className="rounded mb-4 mx-auto mt-2 bg-white mt-8"
               src={`${urlimg}${place.place_photo[1]}`}
               alt="/"
-              style={{ height: "300px", width: "450px" }}
+              style={{ height: "350px", width: "450px" }}
             />
           </div>
           <div className="  text-3xl">
@@ -72,7 +72,7 @@ function Searchplace() {
               className="rounded my-8 mx-auto mt-2 bg-white w-96 items-center justify-center " 
               src={`${urlimg}${place.place_photo[1]}`}
               alt="/"
-              style={{ height: "300px", width: "450px" }}
+              style={{ height: "350px", width: "450px" }}
             />
           </div>
           
@@ -91,7 +91,7 @@ function Searchplace() {
               src={`${urlimg}${place.place_photo[2]}`}
               alt="/"
               st
-              yle={{ height: "200px", width: "250px" }}
+              yle={{ height: "350px", width: "450px" }}
             />
           </div>
           <div className="flex flex-col w-[50%]">
@@ -118,13 +118,13 @@ function Searchplace() {
       <div className="">
         <div className="hover:shadow-lg hover:bg-slate-100">
         <p className="text-3xl font-semibold">Category Name:</p>
-        <p className="text-xl text-blue-500 mb-4 ml-12">{place.category_name}</p>
+        <p className="text-xl  mb-4 ml-12 p-12">{place.category_name}</p>
         </div>
         <p className="text-3xl font-semibold">Best Time to Visit:</p>
-        <p className="text-xl text-blue-500 mb-4 ml-12">{place.place_besttime}</p>
+        <p className="text-xl  mb-4 ml-12 p-12">{place.place_besttime}</p>
 
         <p className="text-3xl font-semibold">How to Reach:</p>
-        <p className="text-xl text-blue-500 mb-4 ml-12" ml-8>{place.place_howtoreach}</p>
+        <p className="text-xl mb-4 ml-12 p-12" ml-8>{place.place_howtoreach}</p>
       </div>
     </div>
   );

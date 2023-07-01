@@ -4,8 +4,8 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const url='http://172.0.16.125/php/ethoshackphp/SAFAR/php/display';
-const urlimg='http://172.0.16.125/php/ethoshackphp/SAFAR/php/uploads/';
+const url='http://192.168.74.56/php/ethoshackphp/SAFAR/php/display';
+const urlimg='http://192.168.74.56/php/ethoshackphp/SAFAR/php/uploads/';
 const Filter = ({data}) => {
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');

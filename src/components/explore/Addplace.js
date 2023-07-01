@@ -10,7 +10,7 @@ const Addplace = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get('http://172.0.16.125/php/ethoshackphp/SAFAR/php/addplace/addplace.php', {
+      const response = await axios.get('http://192.168.74.56/php/ethoshackphp/SAFAR/php/addplace/addplace.php', {
         params: {
           region_id: regionId,
           place_name: placeName,
