@@ -6,7 +6,6 @@ import adv from '../image/adventure.jpeg'
 import culture from '../image/culture.jpeg';
 import nature from '../image/nature.jpeg';
 import wellness from '../image/wellness.jpeg'
-
 import other from '../image/others.jpeg'
 // import FullView from './components/FullView';
 import '../vrapp.css'
