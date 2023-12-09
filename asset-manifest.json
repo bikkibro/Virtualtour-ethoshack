@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.4ab49fbb.css",
+    "main.js": "/react-gh-pages/static/js/main.08ce7a69.js",
+    "static/js/787.9baa8bcb.chunk.js": "/react-gh-pages/static/js/787.9baa8bcb.chunk.js",
+    "static/media/mountain.mp4": "/react-gh-pages/static/media/mountain.33b33ad067178962b368.mp4",
+    "static/media/culture.jpeg": "/react-gh-pages/static/media/culture.5a31924b3e7a275ca2a6.jpeg",
+    "static/media/nature.jpeg": "/react-gh-pages/static/media/nature.0ee523956b62abc958e5.jpeg",
+    "static/media/others.jpeg": "/react-gh-pages/static/media/others.e7a36752ab5cffeeb406.jpeg",
+    "static/media/adventure.jpeg": "/react-gh-pages/static/media/adventure.f954413cbcf2eb2d8b67.jpeg",
+    "static/media/wellness.jpeg": "/react-gh-pages/static/media/wellness.7be6d6be6566ccaa3902.jpeg",
+    "static/media/Phewalake.jpg": "/react-gh-pages/static/media/Phewalake.5d557d96ab42cda305c8.jpg",
+    "static/media/devisfall.jpg": "/react-gh-pages/static/media/devisfall.3894281b05ec287ccafb.jpg",
+    "static/media/sarangkot.jpg": "/react-gh-pages/static/media/sarangkot.ac27261290523b733aa8.jpg",
+    "static/media/logo.jpg": "/react-gh-pages/static/media/logo.87ee8e2ed21d1a415b89.jpg",
+    "static/media/logo.svg": "/react-gh-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "static/media/play.svg": "/react-gh-pages/static/media/play.cf69cc8e15e10bef6339b2632f804e8d.svg",
+    "main.4ab49fbb.css.map": "/react-gh-pages/static/css/main.4ab49fbb.css.map",
+    "main.08ce7a69.js.map": "/react-gh-pages/static/js/main.08ce7a69.js.map",
+    "787.9baa8bcb.chunk.js.map": "/react-gh-pages/static/js/787.9baa8bcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ab49fbb.css",
+    "static/js/main.08ce7a69.js"
+  ]
+}
