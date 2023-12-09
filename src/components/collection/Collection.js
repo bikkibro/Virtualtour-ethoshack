@@ -6,7 +6,7 @@ import image from '../../image/adventure.jpeg'
 function Collection() {
     const [source, setSource] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/api/crypto')
+        fetch('https://dream-backers-crowdfunding-np.cyclic.cloud/api/safar-api')
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
@@ -15,7 +15,7 @@ function Collection() {
     }, [])
     return (
         <div className=" h-full mt-0 ">
-            <h1 className="text-3xl font-bold text-slate-700 bg-slate-300 p-4 -mt-2">Collection of VR Video</h1>
+            <h1 className="text-3xl font-bold text-slate-700 mt-8 bg-slate-300 p-4 ">Collection of VR Video</h1>
             <div className="flex flex-col bg-slate-200">
                 <div className="flex flex-row justify-around ">
                     {
